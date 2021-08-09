@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+:root{
+  --nav_bar : rgba(12, 11, 11, 0.959);
+  --primary-color: rgb(202, 198, 198);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*******************Navbar***********************/
+.logo{
+  width: 16rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.body{
+  font-family: 'Roboto Slab', serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar{
+  background-color:var(--nav_bar);
+  color:var(--primary-color) !important;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-brand{
+  float:left !important;
+  padding: 0 !important;
+}
+.navbar-toggler{
+  background-color: transparent !important;
+  border-style: none !important;
+}
+.nav-item a{
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  color:var(--primary-color) !important;
+}
+nav ul li {
+  text-transform: uppercase;
+  padding-left: 2rem;
+}
+.navbar li a{
+  border-bottom: 0.2rem solid transparent !important;
+}
+nav ul li a:focus{
+  color :rgb(0, 199, 235) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul li a:hover{
+  border-bottom: 0.2rem solid rgb(0, 199, 235) !important;
 }
