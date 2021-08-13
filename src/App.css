@@ -1,49 +1,175 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 :root{
-  --nav_bar : rgba(12, 11, 11, 0.959);
   --primary-color: rgb(202, 198, 198);
+  --best-color : rgb(0, 199, 235) ;
+  --font-family: 'Righteous', cursive;
 }
 
 /*******************Navbar***********************/
-.logo{
-  width: 16rem;
+*{
+  padding: 0;
+  margin: 0;
 }
 
-.body{
-  font-family: 'Roboto Slab', serif;
+
+.the-wrapper{
+  position: relative;
+  background: url(code.gif) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
 }
 
-.navbar{
-  background-color:var(--nav_bar);
-  color:var(--primary-color) !important;
+/************************header********************/
+
+
+.main-info{
+  position: absolute;
+  top: 25rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-family: --var(--font-family);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 5rem !important;
 }
 
-.navbar-brand{
-  float:left !important;
-  padding: 0 !important;
-}
-.navbar-toggler{
-  background-color: transparent !important;
-  border-style: none !important;
-}
-.nav-item a{
-  font-size: 0.9rem;
-  font-weight: 500;
-  letter-spacing: 0.1rem;
-  cursor: pointer;
-  color:var(--primary-color) !important;
-}
-nav ul li {
-  text-transform: uppercase;
-  padding-left: 2rem;
-}
-.navbar li a{
-  border-bottom: 0.2rem solid transparent !important;
-}
-nav ul li a:focus{
-  color :rgb(0, 199, 235) !important;
+.main-info h1{
+  color: var(--best-color) !important;
+  text-transform: capitalize;
 }
 
-nav ul li a:hover{
-  border-bottom: 0.2rem solid rgb(0, 199, 235) !important;
+@media (max-width: 768px) {
+  .main-info h1{
+    font-size: 1.5rem !important;
+  } 
+  
+}
+
+.btn-main-offer{
+  border: 0.2rem solid rgb(14, 156, 97) !important;
+  text-transform: capitalize;
+  border-radius: 5px;
+  padding: 0.75rem;
+  color: var(--primary-color);
+  margin: 1.5rem;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.btn-main-offer:hover{
+  border: 0.2rem solid rgba(253, 253, 253, 0.959) !important;
+  color:rgb(14, 156, 97);
+  font-size: 2.1rem;
+}
+/********************Typed Text*************************/
+
+.typed-text{
+  font-size: 2.5rem;
+  color: rgb(165, 219, 14)
+}
+@media (max-width: 768px) {
+  .typed-text{
+    font-size: 1.9rem !important;
+  } 
+}
+
+/********************************main-section********************/
+.main-wrapper{
+  position: absolute;
+  top: 75rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: cover;
+
+}
+
+
+.main-info-main{
+  font-family: --var(--font-family);
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 1rem;
+
+}
+
+.main-info-main h3{
+  color: var(--best-color) !important;
+  text-transform: capitalize;
+}
+
+.main-info-main > .my-work{
+  font-family: 'Bungee', cursive;
+  font-size: 3rem;
+  color: #ffac85;
+}
+
+
+.list-group-flush{
+  font-size: 2rem;
+}
+
+.list-group-flush > .list-group-item{
+  color: #65638b;
+}
+
+
+/************************IMG********************/
+.profile {
+  margin-top: 25rem;
+  margin-bottom: 1rem;
+  width: 50vh;
+  border-radius: 50%;
+}
+/*********************Work****************************/
+.work{
+  position: absolute;
+  top: 125rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: cover;
+
+}
+
+.my-edu{
+  font-family: 'Bungee', cursive;
+  font-size: 3rem;
+  color: #6b3851;
+}
+
+.work-info{
+  position: absolute;
+  top: 10rem;
+  font-family: --var(--font-family);
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 1rem;
+
+}
+
+.work > .row{
+    position: absolute;
+    top: 5rem;
+    
+  
+  
 }
